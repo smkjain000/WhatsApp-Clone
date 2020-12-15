@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneLoginActivity">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/phonenoinput"
+        android:background="@drawable/inputs"
+        android:hint="Enter Phone No."
+        android:inputType="phone"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/verificationinput"
+        android:layout_below="@id/phonenoinput"
+        android:inputType="number"
+        android:background="@drawable/inputs"
+        android:hint="Enter Verification Code"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sendverificationbtn"
+        android:layout_below="@id/verificationinput"
+        android:text="Send Verification Code"
+        android:textStyle="bold"
+        android:background="@drawable/buttons"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/verifybtn"
+        android:layout_below="@id/sendverificationbtn"
+        android:text="Verify"
+        android:textStyle="bold"
+        android:background="@drawable/buttons"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"/>
+
+
+
+</RelativeLayout>
